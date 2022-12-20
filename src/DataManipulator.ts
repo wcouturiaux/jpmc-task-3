@@ -16,6 +16,8 @@ export class DataManipulator {
   static movingAvg12mo: number = NaN ;
   static historicRatios: number[] = [];
 
+  // Assumes there is a daily ratio and 252 trading days per year to calculate
+  // 12 month moving average.
   static calcMovingAvg12mo(ratio: number): number {
     let countOfRatios;
 
